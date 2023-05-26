@@ -1,0 +1,43 @@
+@font-face {
+    font-family: "Bolt", sans-serif;
+    src: url(../../assets/fonts/NunitoSans_7pt-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Light", Verdana, Geneva, Tahoma, sans-serif;
+    src: url(../../assets/fonts/NunitoSans_7pt-Light.ttf);
+}
+
+@font-face {
+    font-family: "Medium", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    src: url(../../assets/fonts/NunitoSans_7pt-Medium.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+$font1: Bolt;
+$font2:Light;
+$font3:Medium;
+$color1:#007b;
+$color2:#c66995;
+$color3:#17a2b8;
+$grey1: #868e96;
+$grey2:#343a40;
+$black1:#343a40;
+$purple1:#6610f2;
+$purple2:#6f42c1;
+
+@mixin align{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ header {
+    font-family: $font3;
+ }

@@ -1,3 +1,67 @@
-body {
-  background: rgb(160, 96, 160);
+@font-face {
+  font-family: "Bolt", sans-serif;
+  src: url(../../assets/fonts/NunitoSans_7pt-Bold.ttf);
+}
+@font-face {
+  font-family: "Light", Verdana, Geneva, Tahoma, sans-serif;
+  src: url(../../assets/fonts/NunitoSans_7pt-Light.ttf);
+}
+@font-face {
+  font-family: "Medium", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  src: url(../../assets/fonts/NunitoSans_7pt-Medium.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+header {
+  font-family: Medium;
+}
+
+header:before {
+  content: "";
+  position: absolute;
+  color: rgb(17, 17, 17);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  animation: animBefore 1.5s ease forwards;
+  animation-delay: 0.15s;
+}
+@keyframes animBefore {
+  to {
+    opacity: 0;
+  }
+}
+header .navbar {
+  max-width: 1100px;
+  margin: 0 auto;
+  cursor: pointer;
+  height: 20vh;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  align-items: center;
+}
+header .navbar .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.3rem;
+}
+header .navbar ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1.1rem;
+}
+header .navbar ul li {
+  cursor: pointer;
+}
+header .navbar ul li:hover {
+  color: #17a2b8;
 }/*# sourceMappingURL=index.css.map */
