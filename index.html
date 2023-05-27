@@ -1,31 +1,29 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Journey</title>
-    <link rel="stylesheet" href="./assets/styles/index.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
 
-  <body>
-    <header>
-      <nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Journey</title>
+  <link rel="stylesheet" href="./assets/styles/index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="navbar-container">
         <div class="navbar">
           <div class="logo">
             <img src="./assets/img/logo.png" alt="logo" />
             <span>JOURNEY</span>
           </div>
-          
-            <!-- <i class="fa-light fa-bars"></i> -->
-          
+
+          <!-- <i class="fa-light fa-bars"></i> -->
+
           <ul>
             <li>Home</li>
             <li>Top Destinations</li>
@@ -33,7 +31,9 @@
             <li>Contact Us</li>
           </ul>
         </div>
-        <div class="banner">
+      </div>
+      <div class="banner">
+        <div class="banner-container">
           <div class="ban-container">
             <h1>LET'S BEGIN</h1>
             <img src="./assets/img/dots-3.png" alt="dote" />
@@ -42,71 +42,79 @@
           </div>
 
           <div class="ban-form-container">
-            <div class="form-right">
-              <div class="choose">
-                <label for="">Chose Your Destination</label>
-                <input type="text" placeholder="type your destination" />
+            <div class="form-container">
+              <div class="form-right">
+                <div class="choose">
+                  <label for="">Chose Your Destination</label>
+                  <input type="text" placeholder="type your destination" />
+                </div>
+                <div class="date1">
+                  <label for="">Check in Date</label>
+                  <input type="date" placeholder="Check In" />
+                </div>
+                <div class="date2">
+                  <label for="">Check in Date</label>
+                  <input type="date" placeholder="Check In" />
+                </div>
               </div>
-              <div class="date1">
-                <label for="">Check in Date</label>
-                <input type="date" placeholder="Check In" />
+              <div class="form-left">
+                <div class="rooms">
+                  <label for="rooms">How many rooms?</label>
+                  <select name="rooms" id="rooms">
+                    <option value="1 Room">1 Room</option>
+                    <option value="2">2 Rooms</option>
+                    <option value="3">3 Rooms</option>
+                    <option value="4">4 Rooms</option>
+                    <option value="5">5 Rooms</option>
+                    <option value="6">6 Rooms</option>
+                    <option value="7">7 Rooms</option>
+                    <option value="8">8 Rooms</option>
+                    <option value="9">9 Rooms</option>
+                    <option value="10">10 Rooms</option>
+                  </select>
+                </div>
+                <div class="Adult">
+                  <label for="Adult">Adult</label>
+                  <select name="Adult" id="Adult">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+                </div>
+                <div class="">
+                  <label for="Children">Children</label>
+                  <select name="Children" id="Children">
+                    <option value="10">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                  </select>
+                  <input type="submit" value="CHECK AVAILABILITY">
+                </div>
               </div>
-              <div class="date2">
-                <label for="">Check in Date</label>
-                <input type="date" placeholder="Check In" />
-              </div>
+
             </div>
-            <div class="form-left">
-              <div class="rooms">
-                <label for="rooms">How many rooms?</label>
-                <select name="rooms" id="rooms">
-                  <option value="1 Room">1 Room</option>
-                  <option value="2">2 Rooms</option>
-                  <option value="3">3 Rooms</option>
-                  <option value="4">4 Rooms</option>
-                  <option value="5">5 Rooms</option>
-                  <option value="6">6 Rooms</option>
-                  <option value="7">7 Rooms</option>
-                  <option value="8">8 Rooms</option>
-                  <option value="9">9 Rooms</option>
-                  <option value="10">10 Rooms</option>
-                </select>
-              </div>
-              <div class="Adult">
-                <label for="Adult">Adult</label>
-                <select name="Adult" id="Adult">
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-                  <option value="7">7</option>
-                  <option value="8">8</option>
-                  <option value="9">9</option>
-                  <option value="10">10</option>
-                </select>
-              </div>
-              <div class="">
-                <label for="Children">Children</label>
-                <select name="Children" id="Children">
-                  <option value="10">0</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-                  <option value="7">7</option>
-                  <option value="8">8</option>
-                  <option value="9">9</option>
-                </select>
-              </div>
-            </div>
-            <input type="submit" value="CHECK AVAILABILITY">
+          </div>
+          <div class="overlay">
+
           </div>
         </div>
-      </nav>
-    </header>
-  </body>
+      </div>
+    </nav>
+  </header>
+</body>
+
 </html>

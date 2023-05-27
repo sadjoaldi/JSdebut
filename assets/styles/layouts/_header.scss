@@ -1,47 +1,110 @@
 header {
-  &:before {
-    content: "";
-    position: absolute;
-    color: rgb(17, 17, 17);
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    animation: animBefore 1.5s ease forwards;
-    animation-delay: 0.15s;
+  //  position: relative;
 
-    @keyframes animBefore {
-      to {
-        opacity: 0;
+  .navbar-container {
+    background: white;
+    .navbar {
+      max-width: 1100px;
+      margin: 0 auto;
+      cursor: pointer;
+      height: 20vh;
+      display: grid;
+      grid-template-columns: 30% 70%;
+      align-items: center;
+
+      .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.3rem;
+      }
+      ul {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 1.1rem;
+        cursor: pointer;
+
+        li {
+          &:hover {
+            color: #17a2b8;
+            transition: 0.5s;
+          }
+        }
       }
     }
   }
-  .navbar {
-    max-width: 1100px;
-    margin: 0 auto;
-    cursor: pointer;
-    height: 20vh;
-    display: grid;
-    grid-template-columns: 30% 70%;
-    align-items: center;
+  .banner {
+    height: 80vh;
 
-    .logo {
-      display: flex;
-      justify-content: center;
+    .banner-container {
+      position: relative;
+      max-width: 1380px;
+      margin: 0 auto;
+      height: 100%;
+      background: url(../img/banner.jpg) center/cover;
+      display: grid;
       align-items: center;
-      font-size: 2.3rem;
-    }
-    ul {
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      font-size: 1.1rem;
-      
-      li {
-        cursor: pointer;
-        &:hover {
-            color: #17a2b8;
+
+      .ban-container {
+        padding: 20px 0;
+        color: white;
+        z-index: 5;
+
+        h1 {
+          font-size: 3rem;
         }
+
+        img {
+          margin: 25px 0;
+        }
+        p {
+          font-size: 1.3rem;
+          margin-bottom: 20px;
+        }
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0 auto;
+          height: 50px;
+          width: 50px;
+          border-radius: 150px;
+          background: #69c6ba;
+          text-decoration: none;
+          cursor: pointer;
+          transition: 0.4s ease;
+
+          &:hover {
+            background: #c66995;
+          }
+
+          i {
+            color: whitesmoke;
+          }
+        }
+      }
+      .ban-form-container {
+        .form-container {
+          max-width: 800px;
+          margin: 0 auto;
+          display: flex;
+          align-items: center;
+          background: whitesmoke;
+          z-index: 30;
+          position: relative;
+          height: 250px;
+        }
+      }
+      // **Pour créer un overlay en CSS, vous pouvez utiliser la propriété position pour superposer un élément sur un autre. Ensuite, vous pouvez appliquer une couleur de fond semi-transparente à cet élément pour créer l'effet d'overlay.*****
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 3;
       }
     }
   }
