@@ -64,11 +64,9 @@ main {
           position: relative;
 
           .btn {
-            position: absolute;
+            // position: absolute;
             display: flex;
-            align-items: center;
-            z-index: 7;
-            background: black;
+            justify-content: center;
           }
 
           // &:hover {

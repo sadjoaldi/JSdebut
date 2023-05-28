@@ -187,11 +187,8 @@ main .section2 .slide .carousel_slide-container .carousel {
   position: relative;
 }
 main .section2 .slide .carousel_slide-container .carousel .btn {
-  position: absolute;
   display: flex;
-  align-items: center;
-  z-index: 7;
-  background: black;
+  justify-content: center;
 }
 main .section2 .slide .carousel_slide-container .carousel .carousel-container {
   display: flex;
