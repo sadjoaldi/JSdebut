@@ -129,7 +129,15 @@ header .banner .banner-container .overlay {
   z-index: 3;
 }
 
+main {
+  max-width: 1450px;
+  margin: 0 auto;
+}
+main .section1 {
+  overflow: hidden;
+}
 main .section1 .journey {
+  background: rgb(245, 244, 244);
   padding: 60px 0;
   width: 85%;
   margin: 0 auto;
@@ -158,4 +166,48 @@ main .section1 .journey button {
 main .section1 .journey button:hover {
   background: #c66995;
   transition: 0.4s;
+}
+main .section2 img {
+  width: 30%;
+}
+main .section2 .slide {
+  width: 85%;
+  background: red;
+  margin-top: 39px;
+  margin: 0 auto;
+}
+main .section2 .slide .carousel_slide-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+}
+main .section2 .slide .carousel_slide-container .carousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+main .section2 .slide .carousel_slide-container .carousel .btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  z-index: 7;
+  background: black;
+}
+main .section2 .slide .carousel_slide-container .carousel .carousel-container {
+  display: flex;
+  scroll-snap-type: mandatory;
+  scroll-behavior: smooth;
+  transform: translateX(-100%);
+  transition: 0.7s ease-in-out;
+}
+main .section2 .slide .carousel_slide-container .carousel .carousel-container img {
+  width: 100%;
+  height: auto;
+}
+main .section2 .slide .carousel_slide-container .carousel .carousel-container img:not(:first-child) {
+  margin-left: -100%;
+}
+main .section2 .slide .carousel_slide-container .carousel .carousel-container img:last-child {
+  margin-left: auto;
+  margin-right: -100%;
 }/*# sourceMappingURL=index.css.map */

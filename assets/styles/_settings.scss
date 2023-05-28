@@ -13,7 +13,7 @@
     src: url(../../assets/fonts/NunitoSans_7pt-Medium.ttf);
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -22,23 +22,23 @@
 }
 
 $font1: Bolt;
-$font2:Light;
-$font3:Medium;
-$color1:#007b;
-$color2:#c66995;
-$color3:#17a2b8;
+$font2: Light;
+$font3: Medium;
+$color1: #007b;
+$color2: #c66995;
+$color3: #17a2b8;
 $grey1: #868e96;
-$grey2:#343a40;
-$black1:#343a40;
-$purple1:#6610f2;
-$purple2:#6f42c1;
+$grey2: #343a40;
+$black1: #343a40;
+$purple1: #6610f2;
+$purple2: #6f42c1;
 
-@mixin align{
+@mixin align {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 body {
     background: #d7dce0;
 }
-
