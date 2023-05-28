@@ -100,12 +100,24 @@ header .banner .banner-container .ban-container a i {
 header .banner .banner-container .ban-form-container .form-container {
   max-width: 800px;
   margin: 0 auto;
-  display: flex;
+  display: grid;
+  grid-template-columns: 50% 50%;
   align-items: center;
   background: whitesmoke;
   z-index: 30;
   position: relative;
   height: 250px;
+}
+header .banner .banner-container .ban-form-container .form-container .form-right {
+  display: grid;
+  gap: 15px;
+  padding: 10px 30px;
+  grid-template-rows: 12px 30px 12px 30px 12px 30px;
+  grid-area: "text text" "date1 date2";
+}
+header .banner .banner-container .ban-form-container .form-container .form-right label {
+  display: flex;
+  align-content: flex-end;
 }
 header .banner .banner-container .overlay {
   position: absolute;
@@ -115,4 +127,35 @@ header .banner .banner-container .overlay {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 3;
+}
+
+main .section1 .journey {
+  padding: 60px 0;
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+main .section1 .journey h2 {
+  font-size: 1.9rem;
+  font-weight: normal;
+}
+main .section1 .journey p {
+  width: 75%;
+  margin: 0 auto;
+  color: rgb(77, 76, 76);
+}
+main .section1 .journey button {
+  height: 50px;
+  cursor: pointer;
+  background: #69c6ba;
+  border: none;
+  padding: 5px 25px;
+  color: whitesmoke;
+}
+main .section1 .journey button:hover {
+  background: #c66995;
+  transition: 0.4s;
 }/*# sourceMappingURL=index.css.map */

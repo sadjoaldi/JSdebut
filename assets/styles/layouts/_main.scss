@@ -1,0 +1,39 @@
+main {
+  .section1 {
+    .journey {
+      padding: 60px 0;
+      width: 85%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+
+      h2 {
+        font-size: 1.9rem;
+        font-weight: normal;
+      }
+      p {
+        width: 75%;
+        margin: 0 auto;
+        color: rgb(77, 76, 76);
+      }
+
+      button {
+        height: 50px;
+        cursor: pointer;
+        background: #69c6ba;
+        border: none;
+        padding: 5px 25px;
+        color: whitesmoke;
+
+        &:hover {
+          background: #c66995;
+          transition: 0.4s;
+        }
+      }
+    }
+  }
+  .secton2 {
+  }
+}
