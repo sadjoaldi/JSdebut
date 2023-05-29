@@ -207,4 +207,16 @@ main .section2 .slide .carousel_slide-container .carousel .carousel-container im
 main .section2 .slide .carousel_slide-container .carousel .carousel-container img:last-child {
   margin-left: auto;
   margin-right: -100%;
+}
+main .section3 .continent .continent-container {
+  background: #69c6ba;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 150px;
+}
+main .section3 .continent .cont-list {
+  max-width: 950px;
+  margin: 0 auto;
+  display: grid;
 }/*# sourceMappingURL=index.css.map */

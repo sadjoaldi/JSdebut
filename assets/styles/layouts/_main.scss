@@ -107,6 +107,23 @@ main {
     //     align-items: center;
     // }
   }
+  .section3 {
+    .continent {
+      .continent-container {
+        background: #69c6ba;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 150px;
+      }
+
+      .cont-list {
+        max-width: 950px;
+        margin: 0 auto;
+        display: grid;
+      }
+    }
+  }
 }
 
 // .carousel {
