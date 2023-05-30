@@ -213,10 +213,15 @@ main .section3 .continent .continent-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 150px;
+  height: 200px;
 }
 main .section3 .continent .cont-list {
-  max-width: 950px;
-  margin: 0 auto;
+  max-width: 1050px;
+  margin: 70px auto;
   display: grid;
+}
+main .section3 .continent .cont-list .discover-container .box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }/*# sourceMappingURL=index.css.map */
