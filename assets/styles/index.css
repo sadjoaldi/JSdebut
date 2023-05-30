@@ -214,14 +214,8 @@ main .section3 .continent .continent-container {
   justify-content: space-around;
   align-items: center;
   height: 200px;
+  color: whitesmoke;
 }
 main .section3 .continent .cont-list {
   max-width: 1050px;
-  margin: 70px auto;
-  display: grid;
-}
-main .section3 .continent .cont-list .discover-container .box {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
 }/*# sourceMappingURL=index.css.map */

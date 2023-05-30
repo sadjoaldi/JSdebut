@@ -115,21 +115,26 @@ main {
         justify-content: space-around;
         align-items: center;
         height: 200px;
+        color: whitesmoke;
       }
 
       .cont-list {
         max-width: 1050px;
-        margin: 70px auto;
-        display: grid;
-
-        .discover-container {
-          .box {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-          }
-        }
       }
+
+      // .cont-list {
+      //   max-width: 1050px;
+      //   margin: 70px auto;
+      //   display: grid;
+
+      // .discover-container {
+      //   .box {
+      // display: flex;
+      // justify-content: space-around;
+      // align-items: center;
+      //   }
+      // }
+      // }
     }
   }
 }
