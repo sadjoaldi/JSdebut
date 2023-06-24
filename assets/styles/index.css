@@ -24,6 +24,9 @@ body {
 
 header .navbar-container {
   background: white;
+  position: fixed;
+  z-index: 200;
+  width: 100%;
 }
 header .navbar-container .navbar {
   max-width: 1100px;

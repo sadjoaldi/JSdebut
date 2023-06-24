@@ -16,7 +16,7 @@ window.addEventListener("scroll", () => {
   if (window.scrollY < lasScroll) {
     navbarr.style.top = 0;
   } else {
-    navbarr.style.top = "-60px";
+    navbarr.style.top = "-160px";
   }
 
   lasScroll = window.scrollX;

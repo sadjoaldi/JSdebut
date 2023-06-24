@@ -3,6 +3,9 @@ header {
 
   .navbar-container {
     background: white;
+    position: fixed;
+    z-index: 200;
+    width: 100%;
     // .navbar {
     //   position: fixed;
     //   top: 0;
@@ -42,10 +45,6 @@ header {
       display: grid;
       grid-template-columns: 30% 70%;
       align-items: center;
-
-      #navbarr {
-        position: fixed;
-      }
 
       .logo {
         display: flex;
